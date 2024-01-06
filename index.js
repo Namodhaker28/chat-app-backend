@@ -9,7 +9,7 @@ app.use(cors());
 
 const io = new Server(server,{
     cors:{
-        origin: 'http://localhost:3001',
+        origin: 'http://localhost:3000',
     }
 });
 
@@ -38,6 +38,6 @@ io.on('connection', (socket) => {
   });
 
 server.listen(app.listen(port,()=>{
-  
+
     console.log(`listening on port:${port}`)
 }))
