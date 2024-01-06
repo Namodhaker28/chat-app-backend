@@ -9,7 +9,7 @@ app.use(cors());
 
 const io = new Server(server,{
     cors:{
-        origin: 'https://6599042eb11170a6fb48d11c--verdant-mandazi-e70ad1.netlify.app/',
+        origin: 'https://6599042eb11170a6fb48d11c--verdant-mandazi-e70ad1.netlify.app',
     }
 });
 
