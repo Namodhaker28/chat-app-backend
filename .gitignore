@@ -1,0 +1,54 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Dependency directories
+pnp/
+.pnp/
+.pnp.js
+
+# Optional eslint cache
+.eslintcache
+
+# Production build
+build/
+
+# dotenv environment variables file
+.env
+
+# IDE files
+.vscode/
+.idea/
+
+# macOS files
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# Testing
+coverage/
+
+# Dependency lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Compiled binary addons
+node_modules/**/*.node
+
+# Debugging
+node_modules/.bin/
+node_modules/.cache/
+node_modules/.config/
+node_modules/.local/
+node_modules/.log/
+node_modules/.npm/
+node_modules/.pnp/
+node_modules/.yarn/
+
+# Build output
+dist/
+out/
