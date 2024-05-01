@@ -8,9 +8,10 @@ const cors=require('cors');
 app.use(cors());
 
 const io = new Server(server,{
-    cors:{
-        origin: 'https://verdant-mandazi-e70ad1.netlify.app',
-    }
+  cors: {
+    origin: ['http://localhost:3000', 'https://verdant-mandazi-e70ad1.netlify.app']
+}
+
 });
 
 
@@ -29,6 +30,7 @@ io.on('connection', (socket) => {
       })
 
       socket.on('send_message', (data) => {
+        console.log("data")
         socket.to(data.room).emit('receive_message', data)
       })
 
@@ -38,6 +40,5 @@ io.on('connection', (socket) => {
   });
 
 server.listen(app.listen(port,()=>{
-
     console.log(`listening on port:${port}`)
 }))
